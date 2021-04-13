@@ -1,0 +1,98 @@
+/* Add your styles here */
+.item1 { grid-area: foto; 
+display: block;
+line-height: 0px;
+padding:0 ;
+margin: 0 ;
+
+
+}
+
+.item2 { grid-area: nombre; 
+          background-color: rgb(79,79,79);
+          color:white;
+          
+          text-anchor: middle;
+          }
+          
+.item3 { grid-area: boton1; 
+        background-color: rgb(63,63,63);
+        color:white;
+}
+.item4 { grid-area: descripcion; 
+background-color: rgb(60,60,60);
+color:white;
+}
+.item5 { grid-area: boton2; 
+    background-color: rgb(50,50,50);
+    color:white;
+}
+.item6 { grid-area: boton3;
+  color:white;
+  background-color: rgb(173,223,173);
+}
+.item7 { grid-area: boton4;
+color:white;
+  background-color: rgb(59,131,189);
+}
+.item8 { grid-area: boton5;
+color:white;
+  background-color: rgb(153,90,223);
+}
+.item9{ grid-area:boton6 ;
+color:white;
+  background-color: rgb(255,165,0);}
+.item10{ grid-area:boton7 ;
+color:white;
+  background-color: rgb(219,78,78);}
+.item11{grid-area:boton8;
+color:white;
+  background-color: rgb(239 ,184,16);}
+.item12{grid-area: tituloL;}
+.item13{grid-area: info;
+background-color: rgb(240,240,240);
+}
+.item14{grid-area: infoU;
+background-color: rgb(153,90,300);
+}
+.item15{grid-area: graficas;
+background-color: rgb(59,131,189);
+}
+item17{grid-area: p2;
+position: absolute;
+
+}
+item18{grid-area: p3;
+position: absolute;
+}
+item19{grid-area: p4;
+}
+body{background-color: rgb(180,180,180);}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'foto nombre nombre nombre nombre nombre nombre boton1'
+    'foto descripcion  descripcion descripcion descripcion descripcion descripcion boton2'
+    'foto boton3  boton3 boton4 boton5 boton6 boton7 boton8'
+    'tituloL tituloL tituloL tituloL tituloL tituloL info info'
+    'p2 p2 p3 p3 p4 p4 info info'
+    'infoU infoU graficas graficas graficas graficas graficas graficas'
+    ;
+  grid-gap: 0px;
+  background-color: white;
+  padding: 0px;
+  grid-template-rows: 0;
+  position: absolute;
+  margin : 20px;
+  top:0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.grid-container > div {
+  
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
